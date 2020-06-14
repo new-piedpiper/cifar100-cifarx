@@ -29,8 +29,8 @@ total_no_of_images=no_of_classes_required*2500
 (x_train_all,y_train_all),(x_test,y_test)=cifar100.load_data(label_mode='coarse')
 
 ##Label_index
-p_index=Label_coarse('people').index()
-f_index=Label_coarse('flower').index()
+p_index=Label_coarse.index('people')
+f_index=Label_coarse.index('flower')
 ##Collecting array address of required images
 people=[]
 for i in range(0,50000):
